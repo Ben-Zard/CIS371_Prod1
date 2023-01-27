@@ -1,0 +1,20 @@
+.container { 
+    display: grid; 
+    grid-template-columns: 30% 15% repeat(2, 1fr) 15%; 
+    grid-template-rows: 100px repeat(3, 1fr) 100px; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    }
+    .grid1 { grid-area: 1 / 1 / 2 / 2; } 
+    .grid2 { grid-area: 2 / 1 / 6 / 2; } 
+    .grid3 { grid-area: 5 / 2 / 6 / 6; } 
+    .grid4 { grid-area: 2 / 5 / 3 / 6; } 
+    .grid5 { grid-area: 3 / 2 / 5 / 3; } 
+    .grid6 { grid-area: 3 / 3 / 5 / 6; } 
+    .grid7 { grid-area: 1 / 2 / 2 / 6; } 
+    .grid8 { grid-area: 2 / 2 / 3 / 5; } 
+    
+    .container > div {
+        border: 1px solid black; 
+        }
+    
