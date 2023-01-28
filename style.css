@@ -1,3 +1,9 @@
+html{
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    color: #080808;
+}
+
 .container { 
     display: grid; 
     grid-template-columns: 30% 15% repeat(2, 1fr) 15%; 
@@ -17,4 +23,121 @@
     .container > div {
         border: 1px solid black; 
         }
-    
+        .area1{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(84, 182, 182);
+        }
+        .area2{
+            background-color: rgb(218, 238, 255);
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+ }
+        .area2 > h1,h2{
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+        .area2 > h1{
+            position: relative;
+            font-family: "Raleway", sans-serif;
+            color: #080808;
+            -webkit-transition: all 0.4s ease 0s;
+            -o-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+        }
+
+        .one:before {
+            width: 28px;
+            height: 5px;
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            margin-left: -14px;
+            background-color: #b80000;
+          }
+          .one:after {
+            width: 100px;
+            height: 1px;
+            display: block;
+            content: "";
+            position: relative;
+            margin-top: 25px;
+            left: 50%;
+            margin-left: -50px;
+            background-color: #b80000;
+          }
+        .area2 > h1> span{
+            text-transform: uppercase;
+        }
+        .area3{
+            display: flex;
+            justify-content: center;
+            line-height: 3rem;
+            font-weight: 600;
+            padding: 1rem;
+            background-color: rgb(218, 238, 255);
+        }
+        .area4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(218, 238, 255);
+        }
+        .table{
+            width: 100%;
+            border-collapse: collapse;
+        margin: 1rem;
+    }
+    .table tr:nth-child(2n+1){
+        background-color: rgb(189, 244, 189);
+    }
+    .table tr:nth-child(2n){
+        background-color: rgb(126, 229, 245);
+    }
+    .table td:hover{
+        background-color: rgb(255, 95, 9);
+    }
+    .table th:hover{
+        background-color: rgb(185, 9, 255);
+    }
+    .area5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(84, 182, 182);
+    }
+
+    .area6{
+        display: flex;
+        align-items: center;
+        background-color: rgb(84, 182, 182);
+    }
+    .area6 > ul{
+        list-style: none;
+        background-color: rgb(84, 182, 182);
+    }
+    .area6 > ul> li{
+        padding: 1rem;
+    }
+    .area7{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(218, 238, 255);
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+    }
+    .area8{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(84, 182, 182);
+    }
